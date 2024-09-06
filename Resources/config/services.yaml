@@ -6,16 +6,20 @@ services:
         bind:
             $dataDirectory: "%kimai.data_dir%"
 
-    KimaiPlugin\DemoBundle\:
+    KimaiPlugin\ExtendedPunchIn\:
         resource: '../../*'
         exclude:
             - '../../Migrations/'
             - '../../Resources/'
 
-    KimaiPlugin\DemoBundle\Controller\:
-        resource: '../../Controller'
-        tags: ['controller.service_arguments']
+#    KimaiPlugin\ExtendedPunchIn\Controller\:
+#        resource: '../../Controller'
+#        tags: ['controller.service_arguments']
 
-    KimaiPlugin\DemoBundle\EventSubscriber\ActionsSubscriber:
-        arguments:
-            $environment: '%kernel.environment%'
+#    KimaiPlugin\ExtendedPunchIn\EventSubscriber\ActionsSubscriber:
+#        arguments:
+#            $environment: '%kernel.environment%'
+#            $photosDirectory: '%photos_directory%'
+
+parameters:
+    photos_directory: "%kimai.data_dir%/pictures/clockin"

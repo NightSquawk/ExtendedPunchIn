@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the "DemoBundle" for Kimai.
- * All rights reserved by Kevin Papst (www.kevinpapst.de).
+ * This file is part of the "ExtendedPunchIn" for Kimai.
+ * All rights reserved by NightSquawk Tech (nightsquawk.tech).
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace KimaiPlugin\DemoBundle;
+namespace KimaiPlugin\ExtendedPunchIn;
 
 use App\Plugin\PluginInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class DemoBundle extends Bundle implements PluginInterface
+class ExtendedPunchIn extends Bundle implements PluginInterface
 {
 }

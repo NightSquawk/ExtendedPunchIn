@@ -1,29 +1,34 @@
 {
-    "name": "keleo/demo-plugin",
-    "description": "Showcase plugin for Kimai, with demos for many extension points within the core",
-    "homepage": "https://github.com/Keleo/DemoBundle",
+    "name": "nightsquawk/extendedpunchin",
+    "description": "Kimai (https://www.kimai.org) plugin that extends the functionality of punching (clocking) in",
+    "homepage": "https://github.com/NightSquawk/ExtendedPunchIn",
     "type": "kimai-plugin",
     "version": "2.5.0",
     "keywords": [
         "kimai",
-        "kimai-plugin"
+        "kimai-plugin",
+        "punch",
+        "clock",
+        "extended",
+        "extended punch in",
+        "extended clock in"
     ],
     "license": "MIT",
     "authors": [
         {
-            "name": "Kevin Papst",
-            "homepage": "https://www.kimai.org"
+            "name": "K Reyes",
+            "email": "kvrnn@nightsquawk.tech"
         }
     ],
     "extra": {
         "kimai": {
             "require": 21500,
-            "name": "Developer demo"
+            "name": "ExtendedPunchIn"
         }
     },
     "autoload": {
         "psr-4": {
-            "KimaiPlugin\\DemoBundle\\": ""
+            "KimaiPlugin\\ExtendedPunchIn\\": ""
         }
     },
     "config": {
